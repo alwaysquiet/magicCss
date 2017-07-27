@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/*CSS reset*/
+html {
+	overflow-x: hidden;
+	overflow-y: auto;
+	color: #333;
+	font-size: 62.5%;
+	font-family: Microsoft Yahei,simsun,Tahoma,Helvetica,Arial,SimHei,sans-serif;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote {
+	margin: 0;
+	padding: 0
+}
+fieldset, img {
+	border: 0
+}
+address, caption, cite, code, dfn, em, th, var, optgroup {
+	font-style: normal;
+	font-weight: 400
+}
+del, ins {
+	text-decoration: none
+}
+li {
+	list-style: none
+}
+caption, th {
+	text-align: left
+}
+q:before, q:after {
+	content: ''
+}
+abbr, acronym {
+	border: 0;
+	font-variant: normal
+}
+sup {
+	vertical-align: baseline
+}
+sub {
+	vertical-align: baseline
+}
+legend {
+	color: #000
+}
+input, button, textarea, select, optgroup, option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit
+}
+input, button, textarea, select {
+	outline:none;
+	*font-size: 100%
+}
+textarea{resize:none}
+
+a {
+	outline: 0;
+	text-decoration: none;
+}
+a:hover {
+	outline: 0;
+	text-decoration: none;
+}
+.clearfix, .cf {
+	zoom: 1
+}
+.clearfix:after, .cf:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+* {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-appearance: none;
+	outline:none;
+}
+
+.container {
+	width:100%;
+	position:relative;
+}
+
+.code-wrap {
+	width: 100%;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	height: 400px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.css-live-wrap {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.code {
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 14px;
+	background: #ffe;
+	display: block;
+	padding: 1em;
+	font-family: Consolas, Monaco, monospace;
+	white-space: pre;
+	color: #333;
+	text-shadow: 0 1px 1px white;
+	overflow-y: scroll;
+}
+
+summary {
+	position: absolute;
+	cursor: default;
+	left: 0;
+	color: #999;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 20px 0 0 20px;
+	border-left: 2px solid #FF9800;
+	padding: 0 10px;
+	text-shadow: 0 0.2px hsl(0,0%,85%);
+	background: linear-gradient(#ff9800, #ff9800) no-repeat;
+	background-size: 100% 1px;
+	background-position: -400px bottom;
+	transition: .5s;
+}
+
+summary:hover {
+	background-position: -0em bottom;
+}
+
+summary:nth-child(2){
+	margin-top: 60px;
+}
